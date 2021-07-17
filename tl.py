@@ -27,7 +27,7 @@ if upload is not None:
     y = model.predict(x)
     label = decode_predictions(y)
     # print the classification
-    for i in range(3):
+    for i in range(3):  
       out = label[0][i]
       st.sidebar.title('%s (%.2f%%)' % (out[1], out[2]*100))
   
